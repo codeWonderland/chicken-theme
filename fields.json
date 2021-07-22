@@ -1,0 +1,30 @@
+[
+    {
+        "label": "Accent Color",
+        "name": "accent_color",
+        "type": "color",
+        "default": {
+            "color": "#ddd"
+        }
+    },
+    {
+        "label" : "Primary Font",
+        "name" : "primary_font",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "serif", "Serif" ], [ "Arial", "Sans-Serif" ] ],
+        "type" : "choice",
+        "default" : "Arial"
+    },
+    {
+        "label" : "Secondary Font",
+        "name" : "secondary_font",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "serif", "Serif" ], [ "Arial", "Sans-Serif" ] ],
+        "type" : "choice",
+        "default" : "serif"
+    }
+]

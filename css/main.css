@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    font-family: {{ theme.primary_font.value }};
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: {{ theme.secondary_font.value }};
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+.page-wrapper {
+    color: #000;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 1rem;
+    min-height: 100vw;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    // background: url({{ get_asset_url('../images/backyard-chickens.jpeg') }}) 0 39% no-repeat #333;
+}
+
+header {
+    padding: 1em 50% 1em 2em;
+}
+
+header, footer {
+    background-color: {{ theme.accent_color.color }};
+}
