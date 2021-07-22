@@ -1,0 +1,24 @@
+<div class="team-list">
+  {% for item in module.team_member %}
+    <div class="team-member">
+      {% if item.headshot.src %}
+        {% set sizeAttrs = 'width="{{ item.headshot.width }}" height="{{ item.headshot.height }}"' %}
+
+        {% if item.headshot.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.headshot.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.headshot.max_width }}" height="{{ item.headshot.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+
+        {% set loadingAttr = item.headshot.loading != 'disabled' ? 'loading="{{ item.headshot.loading }}"' : '' %}
+
+        <img src="{{ item.headshot.src }}" alt="{{ item.headshot.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% else %}
+        <img src="{{ get_asset_url('../../images/chicken-headshot.jpg') }}" alt="A Dignified Chicken" />
+      {% endif %}
+
+      {% inline_text field="full_name" value="{{ item.full_name }}" %}
+      {% inline_text field="position" value="{{ item.position }}" %}
+    </div>
+  {% endfor %}
+</div>

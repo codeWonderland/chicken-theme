@@ -1,0 +1,25 @@
+div.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+div.team-list div.team-member {
+    padding: 0 1em 2em;
+}
+
+div.team-list div.team-member img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+    div.team-list div.team-member {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 899.99px) {
+    div.team-list div.team-member {
+        width: 50%;
+    }
+}

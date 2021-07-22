@@ -20,7 +20,7 @@
 
     <div class="page-wrapper">
 
-      <h2>{% module "mission_header" path="@hubspot/text" label="Mission Header" value="Mission" %}</h2> 
+      <h2>{% module "mission_header" path="@hubspot/text" label="Mission Header" value="Our Mission" %}</h2> 
 
       {% dnd_area "dnd_mission" class="dnd-mission", label="Mission Section" %}
 
@@ -61,6 +61,10 @@
         {% end_dnd_section %}
 
       {% end_dnd_area %}
+
+      <h2>{% module "team_header" path="@hubspot/text" label="Team Header" value="Our Team" %}</h2> 
+
+      {% module "team_list" path="../modules/Team", label="Team Listing" %}
     
     </div>
 

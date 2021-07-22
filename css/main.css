@@ -14,12 +14,14 @@ body {
     padding: 0;
     background-color: #fff;
 }
+body {
+    min-height: 100vh;
+}
 .page-wrapper {
     color: #000;
     max-width: 1100px;
     margin: 0 auto;
     padding: 2em;
-    min-height: 100vw;
 }
 
 h1 {

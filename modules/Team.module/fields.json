@@ -1,0 +1,83 @@
+[ {
+  "id" : "a2f2b943-95b9-4c49-2a6c-cd2e73686b1d",
+  "name" : "team_member",
+  "label" : "Team Member",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "16586cd3-5cc9-f3d9-eee0-dbd420b856db",
+    "name" : "headshot",
+    "label" : "Headshot",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "22abde6a-9826-c2e2-cd21-800aca3abfb9",
+    "name" : "full_name",
+    "label" : "Full Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Chicken Little"
+  }, {
+    "id" : "afc97cff-8cf8-8272-2917-a6bc7876aa47",
+    "name" : "position",
+    "label" : "Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "HR"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "headshot" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "full_name" : "Chicken Little",
+    "position" : "HR"
+  }, {
+    "headshot" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "full_name" : "Chicken Little",
+    "position" : "HR"
+  }, {
+    "headshot" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "full_name" : "Chicken Little",
+    "position" : "HR"
+  } ]
+} ]
