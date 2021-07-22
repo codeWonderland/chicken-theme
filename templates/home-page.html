@@ -15,14 +15,56 @@
     {{ standard_header_includes }}
   </head>
   <body>
-    <div class="page-wrapper">
-      {% global_partial path="./partials/header.html" %}
 
-      {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}  
+    {% global_partial path="./partials/header.html" %}
+
+    <div class="page-wrapper">
+
+      <h2>{% module "mission_header" path="@hubspot/text" label="Mission Header" value="Mission" %}</h2> 
+
+      {% dnd_area "dnd_mission" class="dnd-mission", label="Mission Section" %}
+
+        {% dnd_section %}
+
+          {% dnd_column %}
+
+            {% dnd_row %}
+
+              {% dnd_module "mission_text" path="@hubspot/rich_text" width="6" offset="0" label="Mission Copy" %}
+
+                {% module_attribute "html" %}
+
+                  <h3>We are here for the chickens</h3>
+                  <p>We don't care about much else here. We've got our chickens, we've got our eggs, and we have a strict no hawk policy.</p>
+
+                {% end_module_attribute %}
+
+              {% end_dnd_module %}
+
+              {% dnd_module "mission_image"
+                path="@hubspot/image"
+                class="mission-image"
+                img={
+                  'src': get_asset_url('../images/chickens-flock.jpg'),
+                  'alt': 'Happy coworkers pecking for bugs',
+                  'size_type': 'auto'
+                }
+                width="6" offset="6"
+              %}
+
+              {% end_dnd_module %}
+
+            {% end_dnd_row %}
+
+          {% end_dnd_column %}
+
+        {% end_dnd_section %}
+
+      {% end_dnd_area %}
     
-      
-      {% global_partial path="./partials/footer.html" %}
     </div>
+
+    {% global_partial path="./partials/footer.html" %}
 
     {{ standard_footer_includes }}
   </body>
