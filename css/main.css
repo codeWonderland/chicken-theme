@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: {{ theme.primary_font.value }};
+    font-family: {{ theme.primary_font }};
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: {{ theme.secondary_font.value }};
+h1, h2, h3, h4, h5,
+h1 *, h2 *, h3 *, h4 *, h5 * {
+    font-family: {{ theme.secondary_font }};
 }
 
 html,

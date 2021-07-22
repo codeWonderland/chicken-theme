@@ -13,9 +13,9 @@
         "required" : false,
         "locked" : false,
         "display" : "select",
-        "choices" : [ [ "serif", "Serif" ], [ "Arial", "Sans-Serif" ] ],
+        "choices" : [ [ "serif", "Serif" ], [ "sans-serif", "Sans-Serif" ] ],
         "type" : "choice",
-        "default" : "Arial"
+        "default" : "sans-serif"
     },
     {
         "label" : "Secondary Font",
@@ -23,7 +23,7 @@
         "required" : false,
         "locked" : false,
         "display" : "select",
-        "choices" : [ [ "serif", "Serif" ], [ "Arial", "Sans-Serif" ] ],
+        "choices" : [ [ "serif", "Serif" ], [ "sans-serif", "Sans-Serif" ] ],
         "type" : "choice",
         "default" : "serif"
     }
