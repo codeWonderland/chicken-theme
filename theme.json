@@ -1,4 +1,4 @@
 {
     "label": "Chickens",
-    "preview_path" : "./templates/home-page.html"
+    "preview_path" : "./templates/home.html"
 }
